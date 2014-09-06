@@ -1,6 +1,19 @@
 # Raspberry Pi Raspbian Configuration
 ---
 
+## SSH
+```
+sudo raspi-config
+ssh
+Enable or disable ssh server
+```
+
+Find the pi:
+```
+sudo nmap -sP 10.0.1.0/24
+```
+
+
 ## VNC
 
 ```
@@ -17,7 +30,14 @@ Add:
 @vncserver :1 -geometry 1024x728 -depth 24
 ```
 
-## Intstall NodeJs
+## Uppgrade
+```
+sudo apt-get update
+sudp apt-get upgrade
+```
+
+
+## NodeJs
 
 ```
 sudo mkdir /opt/node
@@ -29,7 +49,7 @@ tar xvzf node-v0.10.3-linux-arm-pi.tar.gz
 sudo cp -r node-v0.10.3-linux-arm-pi/* /opt/node
 ```
 
-Add Node.JS to your path variable:
+Add Node to your path variable:
 
 ```
 sudo nano /etc/profile
