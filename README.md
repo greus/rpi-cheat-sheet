@@ -1,6 +1,13 @@
 # Raspberry Pi Raspbian Configuration
 ---
 
+## VNC
+
+```
+sudo apt-get install tightvncserver
+```
+
+
 ## Intstall NodeJs
 
 ```
