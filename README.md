@@ -19,6 +19,13 @@ scp pi@10.0.1.23:~/filepath  ~/destpath
 ```
 
 
+## Uppgrade
+```
+sudo apt-get update
+sudo apt-get upgrade
+```
+
+
 ## VNC
 
 ```
@@ -33,12 +40,6 @@ sudo nano autostart
 Add:
 ```
 @vncserver :1 -geometry 1024x728 -depth 24
-```
-
-## Uppgrade
-```
-sudo apt-get update
-sudp apt-get upgrade
 ```
 
 
