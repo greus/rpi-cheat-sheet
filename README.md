@@ -13,6 +13,11 @@ Find the pi:
 sudo nmap -sP 10.0.1.0/24
 ```
 
+Copy a file from pi:
+```
+scp pi@10.0.1.23:~/filepath  ~/destpath
+```
+
 
 ## VNC
 
