@@ -1,4 +1,4 @@
-# RaspberryPi Raspbian Configuration
+# Raspberry Pi Raspbian Configuration
 ---
 
 ## Intstall NodeJs
@@ -36,6 +36,13 @@ Recursively change the owner of the files in your /opt/node folder to the curren
 sudo chown -R $USER /opt/node
 ```
 
+
+##Arduino
+
+Find port (Uno at '/dev/ttyACM0'):
+```
+ls /dev/tty*
+```
 
 
 
