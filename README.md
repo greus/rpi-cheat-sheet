@@ -7,6 +7,15 @@
 sudo apt-get install tightvncserver
 ```
 
+Autostart (LXDE):
+```
+cd /etc/xdg/lxsession/LXDE
+sudo nano autostart
+```
+Add:
+```
+@vncserver :1 -geometry 1024x728 -depth 24
+```
 
 ## Intstall NodeJs
 
@@ -20,7 +29,7 @@ tar xvzf node-v0.10.3-linux-arm-pi.tar.gz
 sudo cp -r node-v0.10.3-linux-arm-pi/* /opt/node
 ```
 
-add Node.JS to your path variable:
+Add Node.JS to your path variable:
 
 ```
 sudo nano /etc/profile
@@ -44,7 +53,7 @@ sudo chown -R $USER /opt/node
 ```
 
 
-##Arduino
+## Arduino
 
 Find port (Uno at '/dev/ttyACM0'):
 ```
