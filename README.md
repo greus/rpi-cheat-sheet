@@ -1,6 +1,9 @@
 # Raspberry Pi Raspbian Configuration
 ---
 
+## OS
+http://www.raspberrypi.org/help/noobs-setup/
+
 ## SSH
 ```
 sudo raspi-config
