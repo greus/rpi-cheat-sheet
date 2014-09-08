@@ -11,7 +11,7 @@ ssh
 Enable or disable ssh server
 ```
 
-Find the pi:
+Find the Pi:
 ```
 sudo nmap -sP 10.0.1.0/24
 ```
@@ -22,13 +22,13 @@ Generate SSH key:
 ssh-keygen -t rsa -C "Raspberry Pi #123"
 ```
 
-Copy your public SSH key to Raspberry Pi:
+Copy your public SSH key to Pi:
 ```
 cat ~/.ssh/id_rsa.pub | ssh <USERNAME>@<IP-ADDRESS> 'cat >> .ssh/authorized_keys'
 ```
 http://www.raspberrypi.org/documentation/remote-access/ssh/passwordless.md
 
-Copy a file from pi:
+Copy a file from Pi:
 ```
 scp pi@10.0.1.23:~/filepath  ~/destpath
 ```
