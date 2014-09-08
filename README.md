@@ -17,10 +17,16 @@ sudo nmap -sP 10.0.1.0/24
 ```
 
 Generate SSH key:
-http://www.raspberrypi.org/documentation/remote-access/ssh/passwordless.md
+
 ```
 ssh-keygen -t rsa -C "Raspberry Pi #123"
 ```
+
+Copy your public SSH key to Raspberry Pi:
+```
+cat ~/.ssh/id_rsa.pub | ssh <USERNAME>@<IP-ADDRESS> 'cat >> .ssh/authorized_keys'
+```
+http://www.raspberrypi.org/documentation/remote-access/ssh/passwordless.md
 
 Copy a file from pi:
 ```
