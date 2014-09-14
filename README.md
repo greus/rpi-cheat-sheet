@@ -19,7 +19,7 @@ sudo nmap -sP 10.0.1.0/24
 Generate SSH key:
 
 ```
-ssh-keygen -t rsa -C "Raspberry Pi #123"
+ssh-keygen -t rsa -C "My Raspberry Pi"
 ```
 
 Copy your public SSH key to Pi:
