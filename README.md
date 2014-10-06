@@ -56,6 +56,10 @@ Add:
 ```
 @vncserver :1 -geometry 1024x728 -depth 24
 ```
+Connect:
+```
+vnc://10.0.1.23:5901
+```
 
 
 ## NodeJs
